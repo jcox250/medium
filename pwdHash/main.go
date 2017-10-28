@@ -12,10 +12,7 @@ func main() {
 		pwd := getPwd()
 		hash := hashAndSalt(pwd)
 
-		pwd2 := getPwd()
-		pwdMatch := comparePasswords(hash, pwd2)
-
-		fmt.Println("Passwords Match?", pwdMatch)
+		fmt.Println("Salted Hash", hash)
 	}
 }
 
